@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âncora Legal | Advocacia</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{background:#F9F7F2;font-family:'Times New Roman',Times,serif;color:#2E2B26;line-height:1.5;}
+        h1,h2,h3,.nav-link,.btn,.card h3,.footer-col h4,label,.submit-btn{font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+        header{background:#4B4737;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+        .header-flex{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+        .logo h1{font-size:1.8rem;color:white;}
+        .logo p{color:#B1AB99;font-size:0.8rem;}
+        .nav-links{display:flex;gap:2rem;list-style:none;}
+        .nav-link{color:#F0EBE0;text-decoration:none;font-weight:500;transition:0.3s;border-bottom:2px solid transparent;padding-bottom:4px;}
+        .nav-link:hover{color:#B1AB99;border-bottom-color:#B1AB99;}
+        .hero{background:linear-gradient(135deg,#4B4737 0%,#5e5945 100%);padding:3.5rem 0;text-align:center;color:white;}
+        .hero h2{font-size:2.5rem;margin-bottom:1rem;}
+        .hero p{font-size:1.2rem;max-width:650px;margin:0 auto 2rem;}
+        .btn{display:inline-block;background:#B1AB99;color:#2E2B26;padding:12px 32px;border-radius:40px;text-decoration:none;font-weight:bold;transition:0.2s;cursor:pointer;}
+        .btn:hover{background:#9e9885;transform:translateY(-3px);}
+        .servicos{padding:3.5rem 0;background:white;}
+        .section-title{text-align:center;font-size:2rem;color:#4B4737;margin-bottom:2.5rem;}
+        .section-title::after{content:'';display:block;width:70px;height:3px;background:#B1AB99;margin:12px auto 0;}
+        .cards-grid{display:flex;flex-wrap:wrap;gap:1.8rem;justify-content:center;}
+        .card{background:#FEFCF8;border-radius:20px;padding:1.8rem 1.2rem;text-align:center;flex:1 1 200px;border:1px solid #E8E0D4;transition:0.3s;}
+        .card:hover{transform:translateY(-5px);border-color:#B1AB99;}
+        .card h3{font-size:1.3rem;margin:0.8rem 0 0.5rem;color:#4B4737;}
+        .icon{font-size:2.2rem;}
+        .diferenciais{background:#F0ECE2;padding:3rem 0;}
+        .diff-flex{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-around;text-align:center;}
+        .diff-item h4{font-size:1.6rem;color:#4B4737;}
+        footer{background:#4B4737;color:#DCD6C8;padding:1.8rem 0 1rem;}
+        .footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;margin-bottom:1.2rem;}
+        .footer-col h4{color:#B1AB99;margin-bottom:0.6rem;}
+        .footer-col a{color:#DCD6C8;text-decoration:none;}
+        .footer-col a:hover{color:#B1AB99;}
+        .copyright{text-align:center;padding-top:1rem;border-top:1px solid #5f5a4a;font-size:0.75rem;}
+        @media (max-width:768px){.hero h2{font-size:1.8rem;}.header-flex{flex-direction:column;text-align:center;}}
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header-flex">
+        <div class="logo"><h1>Âncora Legal</h1><p>Advocacia de Resultados</p></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Início</a></li>
+            <li><a href="#servicos" class="nav-link">Atuação</a></li>
+            <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+            <li><a href="#" id="consultaNavBtn" class="nav-link">Consulta</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Estratégia Jurídica com Propósito</h2>
+            <p>Soluções em Direito Civil, Empresarial e Trabalhista. Atendimento humanizado.</p>
+            <a href="#" id="heroConsultaBtn" class="btn">Agende sua consulta →</a>
+        </div>
+    </section>
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="section-title">Áreas de Atuação</h2>
+            <div class="cards-grid">
+                <div class="card"><div class="icon">⚖️</div><h3>Direito Civil</h3><p>Contratos, família e sucessões</p></div>
+                <div class="card"><div class="icon">🏛️</div><h3>Direito Empresarial</h3><p>Consultoria e recuperação</p></div>
+                <div class="card"><div class="icon">👔</div><h3>Direito Trabalhista</h3><p>Defesa e acordos coletivos</p></div>
+                <div class="card"><div class="icon">📑</div><h3>Direito Tributário</h3><p>Planejamento fiscal</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="diferenciais" class="diferenciais">
+        <div class="container">
+            <h2 class="section-title">Nossos Números</h2>
+            <div class="diff-flex">
+                <div class="diff-item"><h4>+95%</h4><p>Êxito em causas</p></div>
+                <div class="diff-item"><h4>24h</h4><p>Retorno garantido</p></div>
+                <div class="diff-item"><h4>⭐ 4.9</h4><p>Avaliação clientes</p></div>
+                <div class="diff-item"><h4>15+</h4><p>Anos de experiência</p></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>Âncora Legal</h4><p>Av. Paulista, 1100 - SP<br>CNPJ: 12.345.678/0001-99</p></div>
+            <div class="footer-col"><h4>Contato</h4><p>📞 (11) 98765-4321<br>✉️ contato@ancoralegal.adv.br</p></div>
+            <div class="footer-col"><h4>Acesso</h4><p><a href="#" id="footerConsultaLink">Consulta Online</a></p></div>
+        </div>
+        <div class="copyright">© 2025 Âncora Legal | Cores #B1AB99 e #4B4737</div>
+    </div>
+</footer>
+
+<!-- MODAL DE CONSULTA COM NOME, TELEFONE, GMAIL, SERVIÇO -->
+<div id="consultaModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:1000;align-items:center;justify-content:center;">
+    <div style="background:white;max-width:500px;width:90%;border-radius:28px;overflow:hidden;animation:fadeInUp 0.3s ease;">
+        <div style="background:#4B4737;padding:1rem 1.5rem;color:white;display:flex;justify-content:space-between;align-items:center;">
+            <h2 style="font-family:'Segoe UI',sans-serif;font-size:1.5rem;">📋 Consulta Jurídica</h2>
+            <span id="fecharModalBtn" style="font-size:2rem;cursor:pointer;line-height:1;">&times;</span>
+        </div>
+        <div style="padding:1.8rem;">
+            <form id="formConsulta" onsubmit="event.preventDefault(); enviarConsulta();">
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block;font-weight:bold;margin-bottom:6px;color:#4B4737;">Nome completo *</label>
+                    <input type="text" id="consNome" required style="width:100%;padding:12px;border-radius:14px;border:1px solid #B1AB99;font-family:'Times New Roman',serif;">
+                </div>
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block;font-weight:bold;margin-bottom:6px;color:#4B4737;">Telefone *</label>
+                    <input type="tel" id="consTelefone" required style="width:100%;padding:12px;border-radius:14px;border:1px solid #B1AB99;">
+                </div>
+                <div style="margin-bottom:1rem;">
+                    <label style="display:block;font-weight:bold;margin-bottom:6px;color:#4B4737;">E-mail (Gmail) *</label>
+                    <input type="email" id="consGmail" placeholder="seuemail@gmail.com" required style="width:100%;padding:12px;border-radius:14px;border:1px solid #B1AB99;">
+                </div>
+                <div style="margin-bottom:1.5rem;">
+                    <label style="display:block;font-weight:bold;margin-bottom:6px;color:#4B4737;">Serviço desejado *</label>
+                    <select id="consServico" required style="width:100%;padding:12px;border-radius:14px;border:1px solid #B1AB99;">
+                        <option value="">Selecione</option>
+                        <option>Direito Civil</option><option>Direito Empresarial</option>
+                        <option>Direito Trabalhista</option><option>Direito Tributário</option>
+                        <option>Consultoria Geral</option>
+                    </select>
+                </div>
+                <button type="submit" style="background:#4B4737;color:white;border:none;width:100%;padding:14px;border-radius:40px;font-weight:bold;cursor:pointer;font-family:'Segoe UI',sans-serif;">Enviar Solicitação</button>
+                <p style="text-align:center;margin-top:1rem;font-size:0.75rem;color:#5a5442;">🔒 Retorno em até 2h. Dados confidenciais.</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}</style>
+
+<script>
+    function abrirModal(){document.getElementById('consultaModal').style.display='flex';document.body.style.overflow='hidden';}
+    function fecharModal(){document.getElementById('consultaModal').style.display='none';document.body.style.overflow='auto';}
+    function enviarConsulta(){
+        let n=document.getElementById('consNome').value.trim();
+        let t=document.getElementById('consTelefone').value.trim();
+        let g=document.getElementById('consGmail').value.trim();
+        let s=document.getElementById('consServico').value;
+        if(!n||!t||!g||!s){alert("❌ Preencha todos os campos: Nome, Telefone, Gmail e Serviço.");return;}
+        if(!g.includes('@')){alert("✉️ Informe um e-mail válido.");return;}
+        alert(`✅ Consulta registrada!\n\nNome: ${n}\nTelefone: ${t}\nE-mail: ${g}\nServiço: ${s}\n\nNossa equipe retornará em breve.`);
+        document.getElementById('formConsulta').reset();
+        fecharModal();
+    }
+    document.getElementById('consultaNavBtn')?.addEventListener('click',(e)=>{e.preventDefault();abrirModal();});
+    document.getElementById('heroConsultaBtn')?.addEventListener('click',(e)=>{e.preventDefault();abrirModal();});
+    document.getElementById('footerConsultaLink')?.addEventListener('click',(e)=>{e.preventDefault();abrirModal();});
+    document.getElementById('fecharModalBtn')?.addEventListener('click',fecharModal);
+    window.addEventListener('click',(e)=>{let m=document.getElementById('consultaModal');if(e.target===m)fecharModal();});
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape'){let m=document.getElementById('consultaModal');if(m&&m.style.display==='flex')fecharModal();}});
+</script>
+</body>
+</html>
+
+Aviso: "<!DOCTYPE html> <html lang="pt-br">…"
+BRENO BIAZZI DA CRUZ
+Criado em: 15:0715:07
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Consulta Jurídica</title>
+<style>
+body {
+background-color: #B1AB99;
+font-family: 'Times New Roman', Times, serif;
+color: #4B4737;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.form-container {
+background-color: white;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+width: 350px;
+}
+h2 {
+font-family: sans-serif;
+text-align: center;
+border-bottom: 2px solid #4B4737;
+padding-bottom: 10px;
+}
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+input, select {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+border: 1px solid #4B4737;
+box-sizing: border-box;
+}
+button {
+width: 100%;
+margin-top: 20px;
+padding: 10px;
+background-color: #4B4737;
+color: #B1AB99;
+border: none;
+cursor: pointer;
+font-weight: bold;
+}
+.back-link {
+display: block;
+text-align: center;
+margin-top: 15px;
+color: #4B4737;
+text-decoration: none;
+font-size: 0.9em;
+}
+</style>
+</head>
+<body>
+
+<div class="form-container">
+<h2>Solicitar Consulta</h2>
+<form>
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+<label for="telefone">Telefone:</label>
+<input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="seu@email.com">
+
+<label for="servico">Serviços prestados:</label>
+<select id="servico" name="servico">
+<option value="civil">Direito Civil</option>
+<option value="trabalhista">Direito Trabalhista</option>
+<option value="penal">Direito Penal</option>
+<option value="familia">Direito de Família</option>
+</select>
+
+<button type="submit">Enviar Solicitação</button>
+</form>
+<a href="index.html" class="back-link">← Voltar para o Início</a>
+</div>
+
+</body>
+</html>
